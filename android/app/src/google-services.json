@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602425553651",
+    "project_id": "fortreward",
+    "storage_bucket": "fortreward.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602425553651:android:4c15e96bae5903deb3fd86",
+        "android_client_info": {
+          "package_name": "com.fortreward.fortreward"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602425553651-k11asgmd16gbqr8t4nfinf5oo7oa0hbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwWdcFdOA14tDbp2DEe37NJV4yHtmsZU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602425553651-k11asgmd16gbqr8t4nfinf5oo7oa0hbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
