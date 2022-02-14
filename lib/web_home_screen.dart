@@ -50,19 +50,28 @@ class _WebHomeScreenState extends State<WebHomeScreen> {
       showDialog(
           context: context,
           builder: (context) => AlertDialog(
-            title: const Text('Do you want to exit'),
+            title: const Text('Exit App'),
+            content: const Text('Do you want to exit?'),
             actions: <Widget>[
               FlatButton(
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
-                child: const Text('No'),
+                child: const Text('No',
+                  style: TextStyle(
+                      color: Colors.red
+                  ),
+                ),
               ),
               FlatButton(
                 onPressed: () {
                   SystemNavigator.pop();
                 },
-                child: const Text('Yes'),
+                child: const Text('Yes',
+                  style: TextStyle(
+                    color: Colors.red
+                  ),
+                ),
               ),
             ],
           ));
@@ -90,13 +99,13 @@ class _WebHomeScreenState extends State<WebHomeScreen> {
                   _controllerCompleter.future.then((value) => _controller = value);
                   _controllerCompleter.complete(webViewController);
                 },
-                navigationDelegate: (NavigationRequest request) async {
+                /*navigationDelegate: (NavigationRequest request) async {
                   if (!request.url.startsWith(Web.URL)) {
                     await launch(request.url);
                     return NavigationDecision.prevent;
                   }
                   return NavigationDecision.navigate;
-                },
+                },*/
                 zoomEnabled: false,
                 onPageFinished: (value) {
                   if(loading) {
